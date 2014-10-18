@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -20,56 +20,64 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-
         <header>
-            <section class="top white-background">
-                <div class="container">
-                    <a href="#"><img src="./images/logo.png" alt="Oddacity Web Design & Development"></a>
-                    <p>Web Design &amp; Development</p>
-                </div> <!-- / .container -->
-            </section> <!-- / .top -->
-
-            <section class="top-menu">
-                <section class="container">
-                    <a href="#" id="mobile-button"><i class="fa fa-bars fa-lg"></i></a>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#" class="current">Home</a>
-                                <ul>
-                                    <li><a href="#">Sub Link</a></li>
-                                    <li><a href="#">Sub Link</a></li>
-                                    <li><a href="#">Sub Link</a></li>
-                                    <li><a href="#">Sub Link</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Who We Are</a></li>
-                            <li><a href="#">What We Do</a></li>
-                            <li><a href="#">Our Portfolio</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
+            <section class="container">
+                <section class="row">
+                    <aside class="col-md-3">
+                        <img src="img/logo.png" alt="Oddacity Web Design"/>
+                    </aside>
+                    <nav class="col-md-9">
+                        <a href="#">About</a>
+                        <a href="#">Work</a>
+                        <a href="#">Contact</a>
                     </nav>
-                    <ul id="social">
-                        <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest fa-lg"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
-                    </ul>
-                </section> <!-- / .container -->
-            </section> <!-- / .top-menu -->    
-        </header>
+                </section>
+            </section>    
+        </header>    
 
-        <section class="slider">
-            <div class="slide" id="slide0" style="background-image: url(./images/slider_temp.jpg);"></div> <!-- /slide0 -->
-            <div id="slider-controls">
-                <a href="#" id="prev"><i class="fa fa-chevron-left fa-2x"></i></a>
-                <a href="#" id="next"><i class="fa fa-chevron-right fa-2x"></i></a>
-            </div>
+        <section class="grid">
+            <section class="row">
+                <section class="block info col-md-4 orange">
+                    <span class="title">The Big Eat Ontario</span>
+                    <span class="details">Website design for The Big Eat, an Ontario-based food blog.</span>
+                    <button type="button" class="btn btn-default btn-light navbar-btn">View Site</button>
+                </section>
+                <section class="block col-md-8 thebigeat no-padding">
+                </section>
+            </section>
+            <section class="row">
+                <section class="block-sm info col-md-6">
+                    <section class="details container">
+                        <p>Oddacity is a Web Design & Development firm that specializes in creating beautiful and usable websites for clients. We're a small, but mighty team that's ready to tackle your next project.</p>
+                    </section>
+                </section>
+                <section class="block-sm info dark col-md-6">
+                    <button type="button" class="btn btn-default btn-light navbar-btn">Contact Us</button>
+                </section>
+            </section>
+            <section class="row">
+                <section class="block-lg col-md-8 adrianfoster no-padding">
+                </section>
+                <section class="block-lg col-md-4 no-padding">
+                    <section class="row">
+                        <section class="info-services col-md-12 stack details container">
+                            TOP
+                        </section>
+                    </section>
+                    <section class="row">
+                        <section class="block info col-md-12 stack orange">
+                            <span class="title">Adrian Foster for Mayor</span>
+                            <span class="details">Website design for Adrian Foster, Clarington Mayoral Candidate of Fall 2014.</span>
+                            <button type="button" class="btn btn-default btn-light navbar-btn">View Site</button>
+                        </section>
+                    </section>
+                </section>
+            </section>
         </section>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
