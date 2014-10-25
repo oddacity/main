@@ -481,28 +481,28 @@ ul ul .glyphicon {
   overflow: hidden;
 }
 .grid .thebigeat {
-  background: url('../img/work/thebigeat.png') no-repeat left -35px;
+  background: url('../img/work/thebigeat.jpg') no-repeat left -35px;
   background-size: cover;
 }
 @media screen and (max-width: 1100px) {
   .grid .thebigeat {
-    background: url('../img/work/thebigeat.png') no-repeat left top;
+    background: url('../img/work/thebigeat.jpg') no-repeat left top;
     background-size: cover;
   }
 }
 @media screen and (max-width: 640px) {
   .grid .thebigeat {
-    background: url('../img/work/thebigeat.png') no-repeat center top;
+    background: url('../img/work/thebigeat.jpg') no-repeat center top;
     background-size: cover;
   }
 }
 .grid .adrianfoster {
-  background: url('../img/work/adrianfoster.png') no-repeat left top;
+  background: url('../img/work/adrianfoster.jpg') no-repeat left top;
   background-size: cover;
 }
 @media screen and (max-width: 640px) {
   .grid .adrianfoster {
-    background: url('../img/work/adrianfoster.png') no-repeat center top;
+    background: url('../img/work/adrianfoster.jpg') no-repeat center top;
     background-size: cover;
   }
 }
@@ -511,7 +511,12 @@ ul ul .glyphicon {
 }
 @media screen and (max-width: 500px) {
   .grid .block-sm.info {
-    padding-top: 80px;
+    padding-top: 80px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .grid .block-sm.info {
+    padding-top: 50px !important;
   }
 }
 .grid .info {
