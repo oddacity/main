@@ -318,12 +318,15 @@ h1,
 h2,
 h3 {
   font-family: 'Lato', sans-serif;
-  text-align: center;
   margin: 0 0 50px 0;
 }
 h1 {
-  font-size: 34px;
-  color: #f36d21;
+  font-size: 22px;
+  color: #666;
+  margin: 0;
+  font-style: italic;
+  height: 75px;
+  line-height: 75px;
 }
 p {
   font-family: 'Lato', sans-serif;
@@ -333,6 +336,11 @@ p {
   font-weight: 500;
   margin: 0 0 2% 0;
 }
+ul li {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 16px;
+}
 a,
 a img,
 img {
@@ -340,7 +348,7 @@ img {
   border: 0;
 }
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 body {
@@ -349,7 +357,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 header {
-  height: 150px;
+  height: 135px;
   padding: 29.5px 0;
   border-bottom: 1px solid #ddd;
 }
@@ -371,6 +379,13 @@ header nav a {
 }
 .no-padding {
   padding: 0;
+}
+.glyphicon {
+  font-size: 12px;
+  margin-right: 5px;
+}
+ul ul .glyphicon {
+  font-size: 10px;
 }
 .dark {
   background: #666;
@@ -399,6 +414,9 @@ header nav a {
 .orange .btn:hover {
   color: #EF6D22 !important;
 }
+.grey {
+  background: #eee;
+}
 .btn-default {
   border-color: #EF6D22;
   border-radius: 75px;
@@ -425,8 +443,18 @@ header nav a {
   border-color: #fff;
   color: #666;
 }
+.btn-light-inverse {
+  background: #EF6D22;
+  border-color: #EF6D22;
+  color: #fff;
+}
+.btn-light-inverse:hover {
+  background: #F98D29;
+  border-color: #F98D29;
+  color: #fff;
+}
 .grid .block {
-  height: 450px;
+  height: 415px;
   overflow: hidden;
 }
 .grid .block-lg {
@@ -441,6 +469,10 @@ header nav a {
   text-align: center;
   background: #eee;
 }
+.grid .block-lg .info-services ul li {
+  list-style-type: none;
+  text-align: left;
+}
 .grid .block-lg .stack {
   height: 300px;
 }
@@ -449,19 +481,42 @@ header nav a {
   overflow: hidden;
 }
 .grid .thebigeat {
-  background: url('../img/work/thebigeat.png') no-repeat left top;
-  background-size: 100%;
+  background: url('../img/work/thebigeat.png') no-repeat left -35px;
+  background-size: cover;
+}
+@media screen and (max-width: 1100px) {
+  .grid .thebigeat {
+    background: url('../img/work/thebigeat.png') no-repeat left top;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 640px) {
+  .grid .thebigeat {
+    background: url('../img/work/thebigeat.png') no-repeat center top;
+    background-size: cover;
+  }
 }
 .grid .adrianfoster {
   background: url('../img/work/adrianfoster.png') no-repeat left top;
-  background-size: 100%;
+  background-size: cover;
+}
+@media screen and (max-width: 640px) {
+  .grid .adrianfoster {
+    background: url('../img/work/adrianfoster.png') no-repeat center top;
+    background-size: cover;
+  }
 }
 .grid .block-sm.info {
   padding-top: 105px !important;
 }
+@media screen and (max-width: 500px) {
+  .grid .block-sm.info {
+    padding-top: 80px;
+  }
+}
 .grid .info {
   text-align: center;
-  padding-top: 160px;
+  padding-top: 140px;
   background: #eee;
 } 
 .grid .dark {
@@ -484,4 +539,12 @@ header nav a {
 .grid .info .details {
   font-size: 16px;
   font-style: italic;
+}
+.contact {
+  height: 100px;
+  padding: 33px 0;
+  text-align: center;
+}
+.contact .btn {
+  margin: 0;
 }
